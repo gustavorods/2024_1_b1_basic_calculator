@@ -49,33 +49,33 @@ public class calculadora {
     //Soma
     public void Somar() {
         // Entrada
-        setValor1(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: ")));
-        setValor2(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: ")));
+        this.setValor1(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: ")));
+        this.setValor2(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: ")));
 
         // Processamento
-        setResultado(getValor1() + getValor2());
+        this.setResultado(this.getValor1() + this.getValor2());
 
         // Saída
-        JOptionPane.showMessageDialog(null, "Resultado da soma: " + getResultado());
+        JOptionPane.showMessageDialog(null, "Resultado da soma: " + this.getResultado());
     }
 
     // Subtrair
     public void Subtrair(double v1, double v2) {
         // Processamrnto
-        setResultado(v1 - v2);
+        this.setResultado(v1 - v2);
 
         // saida
-        JOptionPane.showMessageDialog(null, "resultado da Subtração: " + getResultado());
+        JOptionPane.showMessageDialog(null, "resultado da Subtração: " + this.getResultado());
     }
 
     // Multiplicar
     public double Multiplicar() {
         // Entrada
-        setValor1(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: ")));
-        setValor2(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: ")));
+        this.setValor1(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: ")));
+        this.setValor2(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: ")));
 
         // Processamento
-        setResultado(getValor1() * getValor2());
+        this.setResultado(this.getValor1() * this.getValor2());
 
         // Saída
         return getResultado();
@@ -84,7 +84,7 @@ public class calculadora {
     // Dividir
     public double Divisao(double v1, double v2) {
         // Processamrnto
-        setResultado(v1 / v2);
+        this.setResultado(v1 / v2);
 
         // Saída
         return getResultado();

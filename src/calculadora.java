@@ -61,8 +61,12 @@ public class calculadora {
 
     // Subtrair
     public void Subtrair(double v1, double v2) {
+        // Alementando os atributos
+        this.setValor1(v1);
+        this.setValor2(v2);
+
         // Processamrnto
-        this.setResultado(v1 - v2);
+        this.setResultado(getValor1() - getValor2());
 
         // saida
         JOptionPane.showMessageDialog(null, "resultado da Subtração: " + this.getResultado());
@@ -83,8 +87,12 @@ public class calculadora {
 
     // Dividir
     public double Divisao(double v1, double v2) {
+        // Alementando os atributos
+        this.setValor1(v1);
+        this.setValor2(v2);
+
         // Processamrnto
-        this.setResultado(v1 / v2);
+        this.setResultado(getValor1() / getValor2());
 
         // Saída
         return getResultado();

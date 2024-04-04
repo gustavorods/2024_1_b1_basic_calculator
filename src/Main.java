@@ -5,7 +5,7 @@ public class Main {
         // Variáveis
         String[] opcoes = {"Soma", "Subtração", "Multiplicação", "Divisão"};
         String decisao;
-        double valor1, valor2, resultado;
+        double num1, num2, r;
 
 
         // Entrada de dados
@@ -30,19 +30,19 @@ public class Main {
                 calculadora.Somar();
                 break;
             case "Subtração":
-                valor1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: "));
-                valor2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: "));
-                calculadora.Subtrair(valor1, valor2);
+                num1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: "));
+                num2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: "));
+                calculadora.Subtrair(num1, num2);
                 break;
             case "Multiplicação":
-                resultado = calculadora.Multiplicar();
-                JOptionPane.showMessageDialog(null, "Resultado da multiplicação: " + resultado);
+                r = calculadora.Multiplicar();
+                JOptionPane.showMessageDialog(null, "Resultado da multiplicação: " + r);
                 break;
             case "Divisão":
-                valor1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: "));
-                valor2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: "));
-                resultado = calculadora.Divisao(valor1, valor2);
-                JOptionPane.showMessageDialog(null, "Resultado da Divisão: " + resultado);
+                num1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 1: "));
+                num2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor 2: "));
+                r = calculadora.Divisao(num1, num2);
+                JOptionPane.showMessageDialog(null, "Resultado da Divisão: " + r);
 
         }
     }
